@@ -152,11 +152,19 @@ figcaption { padding: 12px 16px 16px; font-size: 13px; color: var(--muted); font
   h2 { font-size: clamp(38px, 12vw, 64px); }
 }
 
-.email-btn {
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.border-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 18px 32px;
+  min-height: 64px;
+  padding: 0 34px;
   border: 1px solid rgba(255, 255, 255, 0.38);
   border-radius: 999px;
   background: transparent;
@@ -164,10 +172,11 @@ figcaption { padding: 12px 16px 16px; font-size: 13px; color: var(--muted); font
   text-decoration: none;
   font-weight: 800;
   line-height: 1;
+  cursor: pointer;
   transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
 }
 
-.email-btn:hover {
+.border-btn:hover {
   border-color: #7B5CF0;
   background: rgba(123, 92, 240, 0.14);
   transform: translateY(-2px);
